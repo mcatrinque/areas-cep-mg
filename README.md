@@ -10,7 +10,7 @@
 
 <p> Para permitir o acesso gratuito às informações, o arquivo em formatoshapefile gerado será disponibilizado em um repositório aberto, para uso gratuito. </p>
   
-<p> **Palavras-chave:** Aplicação Urbana de SIG, Endereçamento Urbano, Banco de dadosEspaciais, Geoprocessamento </p>
+**Palavras-chave:** Aplicação Urbana de SIG, Endereçamento Urbano, Banco de dadosEspaciais, Geoprocessamento
   
   ## Metodologia
   O sistema proposto no projeto, pode ser observado em quatro etapas de imple-mentação, sendo que, em alto nível, cada componente do fluxo de trabalho pode serdefinido como nas seções a seguir.
