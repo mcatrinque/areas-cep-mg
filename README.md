@@ -19,6 +19,7 @@
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modela-gem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolvea disponibilização de informações ao público, todos os dados coletados para o projetosão provenientes de repositórios abertos, conforme descrição abaixo: 
  <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de lo-gradouros em Minas Gerais, disponível no OpenAddresses </li>
  <li> Aplicação deshapefilescontendo os limites das unidades federativas brasileiras edos municípios de Minas Gerais, fornecidos pelo portal de mapas do IBGE2, queserão utlizados nesse projeto auxiliar na visualização e, em caso de cidades comapenas um registro de CEP, na delimitação do polígono para a sua representação. </li>
+ 
  ### Modelagem
 O processo de desenvolvimento do banco de dados espaciais e reorganização dosseus registros para uma estrutura que favoreça a representação da área espacial corre pondente a cada CEP no estado de Minas Gerais, dar-se-á da seguinte maneira: 
 <li> Instalação de sistema gerenciador de banco de dados PostgresSQL3e de suaextensão PostGIS para a manipulação de dados espaciais.•Criação de um banco de dados SQL, que irá conter as informações necessáriaspara determinação das áreas de CEP em Minas Gerais. </li>
@@ -27,12 +28,14 @@ O processo de desenvolvimento do banco de dados espaciais e reorganização doss
 <li> Associação dos limites municipais provenientes doIBGE, aos municipios com CEP único encontrados a partir de consulta à basedo OpenAddresses. A operação se faz necessária, uma vez que esses limites sãoa melhor representação de área possível para os registros apontado. </li>
 <li> Construção de um cluster geográfico a partir dos logradouros oriundos da base coletada, agrupando as unidades que possuem o mesmo CEP em comum. </li>
 <li> Criação de um envoltória convexa a partir dos pontos extremos dentro doclusterde cada CEP. </li>
+
 ### Tratamento dos Dados
 Nessa etapa, é feita uma apuração dos resultados obtidos após a modelagem, embusca de estratégias para refinar a qualidade da informação explorada afim de obter resultados com maior exatidão, que são: 
 <li> Seleção apenas das unidades de composição do agrupamento baseada em umaestimativa a partir da média e do limite de dispersão tolerável, sob um intervalode confiança de 9/5%. </li>
 <li> Os n pontos cuja a distância para o centróride doclustera qual pertencem está a uma dispersão dentro do intervaloμ, são considerados integrantes do agrupamento de CEP listado em seu campo descritor de código postal. </li>
 <li> Geração das envoltórias convexas para cadaclusterdeCEP, a partir de uma função para estimar os limites mínimos de geografia paraesse tipo de fecho, resultando a partir dessa operação, na criação de polígonosque representarão a área de cada CEP no território de Minas Gerais. </li>
 <li> Na busca por obter uma melhor representação aproximada das áreas, foi feitauma junção dos polígonos obtidos por meio do cálculo de fecho convexo advindos do passo anterior e dos limites de área dos CEPs que cobrem todos os municípios, resultando em um arquivo no formatoshapefile, a ser disponibilizado. </li>
+
 ### Visualizações e análise
 Para validar as operações realizadas, será necessário a observação tanto do pri-meiro estado dos dados antes e após a modelagem, a partir de sua divisão por logradou-ros, quanto na organização proposta de agrupamentos por CEP, gerada após o processode tratamento. O processo de análise ocorrerá como sugerido a seguir:
 <li> Utilização de ferramentas como o QGIS5, para auxiliar na visualização dos regis-tros georeferenciados coletados. </li>
