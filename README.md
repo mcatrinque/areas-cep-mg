@@ -45,5 +45,5 @@
   Essa estimativa, que visa diminuir a distorção dos polígonos, foi essencial para eliminar doclusterde cada CEP, as unidades residenciais e comerciais com a distância acima da tolerável para o centro de massa de cada agrupamento, devido a sua baixa probabilidade de real associação com o código postal descriminado em seu campo.
   Em virtude da falta de unidades georeferenciadas para algumas regiões na basede dados utilizada, não foi possível estimar todos os CEPs de Minas Gerais, comopretendido. Outro entrave é que em regiões com alta densidade de áreas de CEP aserem geradas, a quantidade de pontos de alguns desses códigos postais era baixa, aponto de não ser possível eliminar possíveis outliers no Cluster, utilizando do método proposto.
   Em suma, após a modelagem e tratamento dos dados, foi possível obter umarquivo, no formatoshapefile, contendo a representação de área dos CEPs de MinasGerais. 
-  O arquivo gerado, foi disponibilizado no seguinte repositório aberto:•
+  O arquivo gerado, foi disponibilizado no seguinte repositório aberto:
  -> https://github.com/mcatrinque/area_cep_mg
