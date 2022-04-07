@@ -8,7 +8,7 @@
 
 <p> A partir do modelo gerado, pretende-se obter visualizações da área correspondente a cada CEP,e também prover uma ferramenta que propicie consultas como as que visam estimar apartir das coordenadas geográficas, a qual CEP um determinado imóvel no espaço ur-bano, pertence. </p>
 
-<p> Para permitir o acesso gratuito às informações, o arquivo em formatoshapefile gerado será disponibilizado em um repositório aberto, para uso gratuito. </p>
+<p> Para permitir o acesso gratuito às informações, o arquivo em formato shapefile gerado será disponibilizado em um repositório aberto, para uso gratuito. </p>
   
 **Palavras-chave:** Aplicação Urbana de SIG, Endereçamento Urbano, Banco de dadosEspaciais, Geoprocessamento
   
