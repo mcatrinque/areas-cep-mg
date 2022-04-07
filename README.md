@@ -18,7 +18,7 @@
  ### Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modela-gem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolvea disponibilização de informações ao público, todos os dados coletados para o projetosão provenientes de repositórios abertos, conforme descrição abaixo: 
  <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível no OpenAddresses </li>
- <li> Utilização de base georeferênciada contendo aproximadamente, 750 mil logradouros em Belo Horizonte, fornecidos pela Prefeitura de Belo Horizonte. </li>
+ <li> Utilização de base georeferênciada contendo aproximadamente, 750 mil logradouros em Belo Horizonte, fornecidos pelo portal BHMap. </li>
  <li> Aplicação de shapefiles contendo os limites das unidades federativas brasileiras edos municípios de Minas Gerais, fornecidos pelo portal de mapas do IBGE2, queserão utlizados nesse projeto auxiliar na visualização e, em caso de cidades comapenas um registro de CEP, na delimitação do polígono para a sua representação. </li>
  
  ### Modelagem
@@ -29,6 +29,7 @@ O processo de desenvolvimento do banco de dados espaciais e reorganização doss
 <li> Associação dos limites municipais provenientes doIBGE, aos municipios com CEP único encontrados a partir de consulta à basedo OpenAddresses. A operação se faz necessária, uma vez que esses limites sãoa melhor representação de área possível para os registros apontado. </li>
 <li> Construção de um cluster geográfico a partir dos logradouros oriundos da base coletada, agrupando as unidades que possuem o mesmo CEP em comum. </li>
 <li> Criação de um envoltória convexa a partir dos pontos extremos dentro doclusterde cada CEP. </li>
+<li> Junção do polígonos gerados a partir dos pontos georeferenciados obtidos através das bases do OpenAddresses e do BHMap </li>
 
 ### Tratamento dos Dados
 Nessa etapa, é feita uma apuração dos resultados obtidos após a modelagem, embusca de estratégias para refinar a qualidade da informação explorada afim de obter resultados com maior exatidão, que são: 
