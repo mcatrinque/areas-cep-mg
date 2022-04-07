@@ -15,13 +15,13 @@
   ## Metodologia
   O sistema proposto no projeto, pode ser observado em quatro etapas de imple-mentação, sendo que, em alto nível, cada componente do fluxo de trabalho pode serdefinido como nas seções a seguir.
   
- ### Coleta de dados
+ ## Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modela-gem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolvea disponibilização de informações ao público, todos os dados coletados para o projetosão provenientes de repositórios abertos, conforme descrição abaixo: 
- <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível no OpenAddresses </li>
- <li> Utilização de base georeferênciada contendo aproximadamente, 750 mil logradouros em Belo Horizonte, fornecidos pelo portal BHMap. </li>
+ <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível no [OpenAddresses](https://batch.openaddresses.io/data) </li>
+ <li> Utilização de base georeferênciada contendo aproximadamente, 750 mil logradouros em Belo Horizonte, fornecidos pelo portal [BHMap](http://bhmap.pbh.gov.br/v2/mapa/idebhgeo) </li>
  <li> Aplicação de shapefiles contendo os limites das unidades federativas brasileiras edos municípios de Minas Gerais, fornecidos pelo portal de mapas do IBGE2, queserão utlizados nesse projeto auxiliar na visualização e, em caso de cidades comapenas um registro de CEP, na delimitação do polígono para a sua representação. </li>
  
- ### Modelagem
+ ## Modelagem
 O processo de desenvolvimento do banco de dados espaciais e reorganização dosseus registros para uma estrutura que favoreça a representação da área espacial corre pondente a cada CEP no estado de Minas Gerais, dar-se-á da seguinte maneira: 
 <li> Instalação de sistema gerenciador de banco de dados PostgresSQL3e de suaextensão PostGIS para a manipulação de dados espaciais.•Criação de um banco de dados SQL, que irá conter as informações necessáriaspara determinação das áreas de CEP em Minas Gerais. </li>
 <li> Importação dos dados e dos limites municipais, citados na etapa de coleta, parao banco de dados iniciado. </li>
@@ -38,7 +38,7 @@ Nessa etapa, é feita uma apuração dos resultados obtidos após a modelagem, e
 <li> Geração das envoltórias convexas para cadaclusterdeCEP, a partir de uma função para estimar os limites mínimos de geografia paraesse tipo de fecho, resultando a partir dessa operação, na criação de polígonosque representarão a área de cada CEP no território de Minas Gerais. </li>
 <li> Na busca por obter uma melhor representação aproximada das áreas, foi feitauma junção dos polígonos obtidos por meio do cálculo de fecho convexo advindos do passo anterior e dos limites de área dos CEPs que cobrem todos os municípios, resultando em um arquivo no formatoshapefile, a ser disponibilizado. </li>
 
-### Visualizações e análise
+## Visualizações e análise
 Para validar as operações realizadas, será necessário a observação tanto do pri-meiro estado dos dados antes e após a modelagem, a partir de sua divisão por logradou-ros, quanto na organização proposta de agrupamentos por CEP, gerada após o processode tratamento. O processo de análise ocorrerá como sugerido a seguir:
 <li> Utilização de ferramentas como o QGIS5, para auxiliar na visualização dos regis-tros georeferenciados coletados. </li>
 <li> A figura 3.5, é uma visualização gerada com o intuito de observar a concentraçãodos logradouros dentro do estado de Minas Gerais, como mapa de calor e pontos. </li>
