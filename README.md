@@ -18,9 +18,9 @@
  ## Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modela-gem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolvea disponibilização de informações ao público, todos os dados coletados para o projetosão provenientes de repositórios abertos, conforme descrição abaixo: 
  <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível em:
-  [OpenAddresses](https://batch.openaddresses.io/data/)</li>
+  <p> [OpenAddresses](https://batch.openaddresses.io/data/)<p> </li>
  <li> Utilização de base georeferênciada contendo aproximadamente, 750 mil logradouros em Belo Horizonte, fornecidos pelo portal:
-  [BHMap](http://bhmap.pbh.gov.br/v2/mapa/idebhgeo)</li>
+  <p> [BHMap](http://bhmap.pbh.gov.br/v2/mapa/idebhgeo)<p> </li>
  <li> Aplicação de shapefiles contendo os limites das unidades federativas brasileiras edos municípios de Minas Gerais, fornecidos pelo portal de mapas do IBGE2, queserão utlizados nesse projeto auxiliar na visualização e, em caso de cidades comapenas um registro de CEP, na delimitação do polígono para a sua representação. </li>
  
  ## Modelagem
