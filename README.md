@@ -25,7 +25,8 @@ Foi realizada uma busca pelas bases georeferênciadas necessárias para a modela
  
  ## Modelagem
 O processo de desenvolvimento do banco de dados espaciais e reorganização dosseus registros para uma estrutura que favoreça a representação da área espacial corre pondente a cada CEP no estado de Minas Gerais, dar-se-á da seguinte maneira: 
-<li> Instalação de sistema gerenciador de banco de dados PostgresSQL3e de suaextensão PostGIS para a manipulação de dados espaciais.•Criação de um banco de dados SQL, que irá conter as informações necessáriaspara determinação das áreas de CEP em Minas Gerais. </li>
+<li> Instalação de sistema gerenciador de banco de dados PostgresSQL3e de suaextensão PostGIS para a manipulação de dados espaciais. </li>
+<li> Criação de um banco de dados SQL, que irá conter as informações necessáriaspara determinação das áreas de CEP em Minas Gerais. </li>
 <li> Importação dos dados e dos limites municipais, citados na etapa de coleta, parao banco de dados iniciado. </li>
 <li> Seleção e remoção de registros contidos no banco e que não correspondem aopropósito do modelo e possam interferir na qualidade do sistema, como os dadoscom o campo CEP vazio ou não associado ao estado de Minas Gerais, ou seja,não iniciados em três. </li>
 <li> Associação dos limites municipais provenientes doIBGE, aos municipios com CEP único encontrados a partir de consulta à basedo OpenAddresses. A operação se faz necessária, uma vez que esses limites sãoa melhor representação de área possível para os registros apontado. </li>
