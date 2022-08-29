@@ -1,5 +1,4 @@
-# SIG CEP/MG - Sistema de Informação Geográfica para a Representação de CEPs Associados ao Estado de Minas Gerais
-
+# Agrupamento de Unidades Georreferenciadas para  a Delimitação de  ́Áeas Postais
 <p> A representação espacial dos limites urbanos, tem propiciado a observação dos fenômenos geogŕaficos, políticos e sociais, graças a extração de informações relevantes provenientes da manipulação e análise dos bancos de dados georeferênciados. </p>
 
 <p> No que tange a postagem, o código de endereçamento postal (CEP), é um dos principais fatores que contribuem para a implementação da logística dos Correios. Através desse meio de endereçamento, é possivel setorizar a distribuição de correspondências e encomendas. </p>
