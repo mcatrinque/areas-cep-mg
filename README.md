@@ -53,4 +53,4 @@ Para validar as operações realizadas, será necessário a observação tanto d
 <p> Em virtude da falta de unidades georeferenciadas para algumas regiões na basede dados utilizada, não foi possível estimar todos os CEPs de Minas Gerais, como pretendido. Outro entrave é que em regiões com alta densidade de áreas de CEP aserem geradas, a quantidade de pontos de alguns desses códigos postais era baixa, aponto de não ser possível eliminar possíveis outliers no Cluster, utilizando do método proposto. </p>
 <p> Em suma, após a modelagem e tratamento dos dados, foi possível obter um arquivo, no formato shapefile, contendo a representação de área dos CEPs de Minas Gerais. </p>
  <p> O arquivo gerado, foi disponibilizado no seguinte repositório aberto: </p>
- <li> https://github.com/mcatrinque/area_cep_mg </li>
+ <li> https://github.com/mcatrinque/area_cep_mg/blob/main/mg_area_cep.csv </li>
