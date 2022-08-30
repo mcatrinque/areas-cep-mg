@@ -14,7 +14,6 @@
 **Palavras-chave:** Aplicação Urbana de SIG, Endereçamento Urbano, Banco de Dados Espaciais, Geoprocessamento
   
  ## Metodologia
-  O sistema proposto no projeto, pode ser observado em quatro etapas de implementação, sendo que, em alto nível, cada componente do fluxo de trabalho pode ser definido como nas seções a seguir.
   
  ### Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modelagem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolve a disponibilização de informações ao público, todos os dados coletados para o projeto são provenientes de repositórios abertos, conforme descrição abaixo: 
