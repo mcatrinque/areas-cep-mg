@@ -1,4 +1,6 @@
-# Agrupamento de Unidades Georreferenciadas para  a Delimitação de  Áreas Postais
+# AGRUPAMENTO DE UNIDADES GEORREFERENCIADAS PARA A DELIMITAÇÃO DE ÁREAS POSTAIS 
+
+## Introdução
 <p> A representação espacial dos limites urbanos, tem propiciado a observação dos fenômenos geogŕaficos, políticos e sociais, graças a extração de informações relevantes provenientes da manipulação e análise dos bancos de dados georeferênciados. </p>
 
 <p> No que tange a postagem, o código de endereçamento postal (CEP), é um dos principais fatores que contribuem para a implementação da logística dos Correios. Através desse meio de endereçamento, é possivel setorizar a distribuição de correspondências e encomendas. </p>
@@ -11,7 +13,7 @@
   
 **Palavras-chave:** Aplicação Urbana de SIG, Endereçamento Urbano, Banco de Dados Espaciais, Geoprocessamento
   
-  ## Metodologia
+ ## Metodologia
   O sistema proposto no projeto, pode ser observado em quatro etapas de implementação, sendo que, em alto nível, cada componente do fluxo de trabalho pode ser definido como nas seções a seguir.
   
  ### Coleta de dados
@@ -32,7 +34,7 @@ O processo de desenvolvimento do banco de dados espaciais e reorganização dos 
 <li> Construção de um cluster geográfico a partir dos logradouros oriundos da base coletada, agrupando as unidades que possuem o mesmo CEP em comum. </li>
 <li> Junção dos registros georeferenciados obtidos através das bases </li>
 
-#### Tratamento dos Dados
+### Tratamento dos dados
 Nessa etapa é realizada a execução de técnicas de refinamento e abordagens para delimitação do contorno das áreas de CEP a partir do agrupamento das unidades residenciais e comerciais oriundas das bases de dados exploradas: 
 <li> Seleção apenas das unidades de composição do agrupamento baseada em uma estimativa a partir da média e do limite de dispersão tolerável, sob um intervalo de confiança de 9/5%. </li>
 <li> Os n pontos cuja a distância para o centróide do cluster a qual pertencem está a uma dispersão dentro do intervalo, são considerados integrantes do agrupamento de CEP listado em seu campo descritor de código postal. </li>
