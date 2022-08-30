@@ -14,7 +14,8 @@
 **Palavras-chave:** Aplicação Urbana de SIG, Endereçamento Urbano, Banco de Dados Espaciais, Geoprocessamento
   
  ## Metodologia
-  
+ <p> O processo de desenvolvimento do projeto é focado em 3 etapas que consistem na coleta, modelagem e tratamento dos dados. As análises e parte do processo realizado foram explicitados, ainda que resumidamente, em um notebook, que se encontra no link: </p>
+ <li> https://github.com/mcatrinque/areas-cep-mg/blob/main/analise_area_cep_mg.ipynb  </li> 
  ### Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modelagem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolve a disponibilização de informações ao público, todos os dados coletados para o projeto são provenientes de repositórios abertos, conforme descrição abaixo: 
  <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível em:
