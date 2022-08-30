@@ -14,7 +14,7 @@
   ## Metodologia
   O sistema proposto no projeto, pode ser observado em quatro etapas de implementação, sendo que, em alto nível, cada componente do fluxo de trabalho pode ser definido como nas seções a seguir.
   
- ## Coleta de dados
+ ### Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modelagem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolve a disponibilização de informações ao público, todos os dados coletados para o projeto são provenientes de repositórios abertos, conforme descrição abaixo: 
  <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível em:
   <p> [OpenAddresses](https://batch.openaddresses.io/data/)<p> </li>
@@ -22,7 +22,7 @@ Foi realizada uma busca pelas bases georeferênciadas necessárias para a modela
   <p> [BHMap](http://bhmap.pbh.gov.br/v2/mapa/idebhgeo)<p> </li>
  <li> Aplicação de shapefiles contendo os limites das unidades federativas brasileiras e dos municípios de Minas Gerais, fornecidos pelo portal de mapas do IBGE, que serão utlizados nesse projeto auxiliar na visualização e, em caso de cidades com apenas um registro de CEP, na delimitação do polígono para a sua representação. </li>
  
- ## Modelagem
+ ### Modelagem
 O processo de desenvolvimento do banco de dados espaciais e reorganização dos seus registros para uma estrutura que favoreça a representação da área espacial correspondente a cada CEP no estado de Minas Gerais, dar-se-á da seguinte maneira: 
 <li> Instalação de sistema gerenciador de banco de dados PostgresSQL e de sua extensão PostGIS para a manipulação de dados espaciais. </li>
 <li> Criação de um banco de dados SQL, que irá conter as informações necessáriaspara determinação das áreas de CEP em Minas Gerais. </li>
@@ -32,14 +32,14 @@ O processo de desenvolvimento do banco de dados espaciais e reorganização dos 
 <li> Construção de um cluster geográfico a partir dos logradouros oriundos da base coletada, agrupando as unidades que possuem o mesmo CEP em comum. </li>
 <li> Junção dos registros georeferenciados obtidos através das bases </li>
 
-### Tratamento dos Dados
+#### Tratamento dos Dados
 Nessa etapa é realizada a execução de técnicas de refinamento e abordagens para delimitação do contorno das áreas de CEP a partir do agrupamento das unidades residenciais e comerciais oriundas das bases de dados exploradas: 
 <li> Seleção apenas das unidades de composição do agrupamento baseada em uma estimativa a partir da média e do limite de dispersão tolerável, sob um intervalo de confiança de 9/5%. </li>
 <li> Os n pontos cuja a distância para o centróide do cluster a qual pertencem está a uma dispersão dentro do intervalo, são considerados integrantes do agrupamento de CEP listado em seu campo descritor de código postal. </li>
 <li> Geração das envoltórias convexas para cada cluster de CEP, a partir de uma função para estimar os limites mínimos de geografia para esse tipo de fecho, resultando a partir dessa operação, na criação de polígonos que representarão a área de cada CEP no território de Minas Gerais. </li>
 <li> Junção dos polígonos obtidos por meio do cálculo de fecho convexo advindos do passo anterior e dos limites de área dos CEPs que cobrem todos os municípios, em busca de obter uma melhor representação aproximada das áreas. </li>
 <li> Aplicação de um contorno baseado em envoltório côncavo para a área que corresponde à Belo Horizonte, devido a sua alta concentração de CEPs </li>
-## Visualizações e análise
+### Visualizações e análise
 Para validar as operações realizadas, será necessário a observação tanto do primeiro estado dos dados antes e após a modelagem, a partir de sua divisão por logradouros, quanto na organização proposta de agrupamentos por CEP, gerada após o processode tratamento. O processo de análise ocorrerá como sugerido a seguir:
 <li> Utilização de ferramentas como o QGIS5, para auxiliar na visualização dos registros georeferenciados coletados. </li>
 <li> A figura 3.5, é uma visualização gerada com o intuito de observar a concentração dos logradouros dentro do estado de Minas Gerais, como mapa de calor e pontos. </li>
