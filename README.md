@@ -46,7 +46,10 @@ Nessa etapa é realizada a execução de técnicas de refinamento e abordagens p
 Para validar as operações realizadas, será necessário a observação tanto do primeiro estado dos dados antes e após a modelagem, a partir de sua divisão por logradouros, quanto na organização proposta de agrupamentos por CEP, gerada após o processode tratamento. O processo de análise ocorrerá como sugerido a seguir:
 <li> Utilização de ferramentas como o QGIS5, para auxiliar na visualização dos registros georeferenciados coletados. </li>
 <li> A figura 3.5, é uma visualização gerada com o intuito de observar a concentração dos logradouros dentro do estado de Minas Gerais, como mapa de calor e pontos. </li>
-<li> Criação de visualizações para observar as diferentes representações por polígonos,exploradas nas etapas de modelagem e tratamento. </li>
+<li> Criação de visualizações para observar as diferentes representações por polígonos, exploradas nas etapas de modelagem e tratamento. </li>
+
+Os arquivos no formato shapefile, contendo as geometrias exploradas e geradas encontram-se em:
+<li> https://drive.google.com/drive/folders/13VjXPGV-O8Eorm1qKM6DubVV4fq4dMj7?usp=sharing <\li>
 
 ## Resultados e Discussão
 <p> Ao final deste projeto, foi possível obter um banco de dados espacial com os clusters geográficos de CEPS disponíveis a partir dos pontos georeferenciados fornecidos pelo OpenAddresses e pelo Portal da Prefeitura de Belo Horizonte, e ainda, como elemento resultante principal, um arquivo do tipo shapefile, que contém a representação da área que abrange cada um dos CEPs do estadode Minas Gerais. </p>
