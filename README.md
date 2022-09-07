@@ -20,9 +20,9 @@
  ### Coleta de dados
 Foi realizada uma busca pelas bases georeferênciadas necessárias para a modelagem proposta e por elementos que auxiliem no processo de visualização e identificaçãodo comportamento espacial dos dados. Como o objetivo do projeto também envolve a disponibilização de informações ao público, todos os dados coletados para o projeto são provenientes de repositórios abertos, conforme descrição abaixo: 
  <li> Utilização de base georeferênciada contendo aproximadamente, 9 milhões de logradouros em Minas Gerais, disponível em:
-  <p> [OpenAddresses](https://batch.openaddresses.io/data/)<p> </li>
+  <p> [OpenAddresses] (https://batch.openaddresses.io/data/)<p> </li>
  <li> Utilização de base georeferênciada contendo aproximadamente, 750 mil logradouros em Belo Horizonte, fornecidos pelo portal:
-  <p> [BHMap](http://bhmap.pbh.gov.br/v2/mapa/idebhgeo)<p> </li>
+  <p> [BHMap] (http://bhmap.pbh.gov.br/v2/mapa/idebhgeo)<p> </li>
  <li> Aplicação de shapefiles contendo os limites das unidades federativas brasileiras e dos municípios de Minas Gerais, fornecidos pelo portal de mapas do IBGE, que serão utlizados nesse projeto auxiliar na visualização e, em caso de cidades com apenas um registro de CEP, na delimitação do polígono para a sua representação. </li>
  
  ### Modelagem
@@ -56,5 +56,5 @@ Para validar as operações realizadas, será necessário a observação tanto d
  <li> https://github.com/mcatrinque/areas-cep-mg/blob/main/areas_cep_mg.csv </li>
  
 <p> Os arquivos no formato shapefile contendo as representações espaciais geradas encontram-se em:
-<li> [CEPs Belo Horizonte](https://drive.google.com/drive/folders/1GLgAKU3Ejle7BIYV8CYyG_siGLirDMgB?usp=sharing) </li>
-<li> [CEPs Belo Horizonte](https://drive.google.com/drive/folders/1TbaDPVW7leRm_LdHxw4AsN28jboFN0zq?usp=sharing) </li>
+<li> [CEPs Belo Horizonte] (https://drive.google.com/drive/folders/1GLgAKU3Ejle7BIYV8CYyG_siGLirDMgB?usp=sharing) </li>
+<li> [CEPs Belo Horizonte] (https://drive.google.com/drive/folders/1TbaDPVW7leRm_LdHxw4AsN28jboFN0zq?usp=sharing) </li>
