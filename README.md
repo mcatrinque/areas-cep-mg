@@ -52,7 +52,7 @@ Para validar as operações realizadas, será necessário a observação tanto d
 <p> Ao final deste projeto, foi possível obter um banco de dados espacial com os clusters geográficos de CEPS disponíveis a partir dos pontos georeferenciados fornecidos pelo OpenAddresses e pelo Portal da Prefeitura de Belo Horizonte, e ainda, como elemento resultante principal, um arquivo do tipo shapefile, que contém a representação da área que abrange cada um dos CEPs do estadode Minas Gerais. </p>
 <p> A nova base de dados é produto da junção entre o uso dos limites municipais das cidades com CEP único como melhor representação de área postal, a estimativa de geometrias baseadas em envoltória côncava para as regiões de alta concentração de CEPs, e o agrupamentos de unidades em função de um envoltório convexo, para os CEPs restantes. </p>
 <p> Em suma, após a modelagem e tratamento dos dados, foi possível obter uma base dados contendo a representação de área dos CEPs de Minas Gerais. </p>
-<p> O arquivo gerado, foi disponibilizado no seguinte repositório aberto:
+<p> A base de dados gerada foi disponibilizada no seguinte repositório:
  <li> https://github.com/mcatrinque/areas-cep-mg/blob/main/areas_cep_mg.csv </li>  </p>
  
 <p> Os arquivos no formato shapefile contendo as representações espaciais geradas encontram-se em:
