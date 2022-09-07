@@ -55,6 +55,6 @@ Para validar as operações realizadas, será necessário a observação tanto d
 <p> O arquivo gerado, foi disponibilizado no seguinte repositório aberto: </p>
  <li> https://github.com/mcatrinque/areas-cep-mg/blob/main/areas_cep_mg.csv </li>
  
-<p> Os arquivos no formato shapefile contendo as representações espaciais geradas encontram-se em:
-<li> [CEPs Minas Gerais] (https://drive.google.com/drive/folders/1GLgAKU3Ejle7BIYV8CYyG_siGLirDMgB?usp=sharing) </li>
-<li> [CEPs Belo Horizonte] (https://drive.google.com/drive/folders/1TbaDPVW7leRm_LdHxw4AsN28jboFN0zq?usp=sharing) </li>
+<p> Os arquivos no formato shapefile contendo as representações espaciais geradas encontram-se em: </p>
+<li> [CEPs MG] (https://drive.google.com/drive/folders/1GLgAKU3Ejle7BIYV8CYyG_siGLirDMgB?usp=sharing) </li>
+<li> [CEPs BH] (https://drive.google.com/drive/folders/1TbaDPVW7leRm_LdHxw4AsN28jboFN0zq?usp=sharing) </li>
