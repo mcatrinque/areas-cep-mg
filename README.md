@@ -53,4 +53,4 @@ Para validar as operações realizadas, será necessário a observação tanto d
 <p> A nova base de dados é produto da junção entre o uso dos limites municipais das cidades com CEP único como melhor representação de área postal, a estimativa de geometrias baseadas em envoltória côncava para as regiões de alta concentração de CEPs, e o agrupamentos de unidades em função de um envoltório convexo, para os CEPs restantes. </p>
 <p> Em suma, após a modelagem e tratamento dos dados, foi possível obter uma base dados contendo a representação de área dos CEPs de Minas Gerais. </p>
  <p> O arquivo gerado, foi disponibilizado no seguinte repositório aberto: </p>
- <li> https://github.com/mcatrinque/area_cep_mg/blob/main/mg_area_cep.csv </li>
+ <li> https://github.com/mcatrinque/areas-cep-mg/blob/main/areas_cep_mg.csv </li>
