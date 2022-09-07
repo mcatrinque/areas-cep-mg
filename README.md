@@ -49,7 +49,7 @@ Para validar as operações realizadas, será necessário a observação tanto d
 <li> Criação de visualizações para observar as diferentes representações por polígonos, exploradas nas etapas de modelagem e tratamento. </li>
 
 Os arquivos no formato shapefile, contendo as geometrias exploradas e geradas encontram-se em:
-<li> https://drive.google.com/drive/folders/13VjXPGV-O8Eorm1qKM6DubVV4fq4dMj7?usp=sharing <\li>
+<li> https://drive.google.com/drive/folders/13VjXPGV-O8Eorm1qKM6DubVV4fq4dMj7?usp=sharing </li>
 
 ## Resultados e Discussão
 <p> Ao final deste projeto, foi possível obter um banco de dados espacial com os clusters geográficos de CEPS disponíveis a partir dos pontos georeferenciados fornecidos pelo OpenAddresses e pelo Portal da Prefeitura de Belo Horizonte, e ainda, como elemento resultante principal, um arquivo do tipo shapefile, que contém a representação da área que abrange cada um dos CEPs do estadode Minas Gerais. </p>
