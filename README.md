@@ -1,4 +1,4 @@
-# AGRUPAMENTO DE UNIDADES GEORREFERENCIADAS PARA A DELIMITAÇÃO DE ÁREAS POSTAIS 
+# AGRUPAMENTO DE ENEDEREÇOS GEORREFERENCIADOS PARA A DELIMITAÇÃO DE ÁREAS POSTAIS 
 
 ## Introdução
 <p> A representação espacial dos limites urbanos, tem propiciado a observação dos fenômenos geogŕaficos, políticos e sociais, graças a extração de informações relevantes provenientes da manipulação e análise dos bancos de dados georeferênciados. </p>
